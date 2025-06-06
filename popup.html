@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save as Markdown</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Save as Markdown</h1>
+            <p id="status">Parsing page...</p>
+        </div>
+        <div class="main-content">
+            <textarea id="markdown-output" readonly placeholder="Generating Markdown..."></textarea>
+        </div>
+        <div class="actions">
+            <button id="copy-btn" class="btn" disabled>Copy to Clipboard</button>
+            <button id="download-btn" class="btn" disabled>Download .md</button>
+        </div>
+    </div>
+    <!-- Third-party libraries -->
+    <script src="turndown.js"></script>
+    <!-- Main script for the popup -->
+    <script src="popup.js"></script>
+</body>
+</html>
